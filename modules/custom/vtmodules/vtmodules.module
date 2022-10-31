@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for VT Modules module.
+ */
+
+
+use Drupal\Core\Field\FieldDefinitionInterface;
+use Drupal\Core\Field\FieldStorageDefinitionInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\TypedData\DataDefinition;
+use Drupal\datetime\DateTimeComputed;
+use Drupal\datetime\Plugin\Field\FieldType\DateTimeItem;
+use Drupal\datetime\Plugin\Field\FieldType\DateTimeItemInterface;
+
+
+ function vtmodules_theme($existing, $type, $theme, $path) {
+    return [
+        'vtnews_block' => [
+            'variables' => ['responses' => NULL],
+        ],
+        'vtevents_block' => [
+            'variables' => ['responses' => NULL],
+        ],
+        'vtsearch_block' => [
+            'variables' => ['responses' => NULL],
+        ],
+        'vtrelated_news_block' => [
+            'variables' => ['responses' => NULL],
+        ],
+        'vtrelated_events_block' => [
+            'variables' => ['responses' => NULL],
+        ],
+    ];
+ }
+
+ function vtmodules_form_alter(&$form, &$form_state, $form_id) {
+    if ($form_id == 'node_events_form') {
+    }
+  } 

@@ -1,0 +1,6 @@
+global-styling:
+  css:
+    theme:
+      vendors/bootstrap/css/bootstrap.min.css: {}
+  js:
+    vendors/bootstrap/js/bootstrap.bundle.min.js: {}

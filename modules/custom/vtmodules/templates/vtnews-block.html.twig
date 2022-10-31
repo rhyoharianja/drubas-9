@@ -1,0 +1,15 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  {% for response in responses %}
+  <div class="col">
+    <div class="card">
+      <img src="{{ file_url(response.image) }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><small class="text-muted">{{response.date}}</small></p>
+        <h5 class="card-title">{{ response.title }}</h5>
+        <p class="card-text">{{ response.description | raw }}</p>
+        <a class="btn btn-danger float-end" href="{{ response.url }}">Detail</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

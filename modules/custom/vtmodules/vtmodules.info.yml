@@ -1,0 +1,5 @@
+name: VT Modules
+type: module
+description: Provides For Custom Modules For VT Drupal
+package: Custom
+core_version_requirement: ^9 || ^10

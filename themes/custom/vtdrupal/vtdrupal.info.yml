@@ -1,0 +1,20 @@
+name: Vox Teneo Drupal Theme
+description: Vox Teneo Drupal Theme Base On Bootstrap 5
+type: theme
+base theme: false
+core_version_requirement: ^8 || ^9 || ^10
+
+version: 1.0.0
+libraries:
+  - vtdrupal/global-styling
+
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
